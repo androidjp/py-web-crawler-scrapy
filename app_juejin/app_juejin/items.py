@@ -14,3 +14,12 @@ class AppJuejinItem(scrapy.Item):
     # link
     url = scrapy.Field()
     pass
+
+
+class AppJuejinCrticleItem(scrapy.Item):
+    # title
+    title = scrapy.Field()
+    # link
+    url = scrapy.Field()
+    # content html
+    html = scrapy.Field()
