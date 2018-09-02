@@ -64,9 +64,13 @@ DEFAULT_REQUEST_HEADERS = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'app_juejin.pipelines.AppJuejinPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'app_juejin.pipelines.AppJuejinPipeline': 300,
+    'app_juejin.pipelines_mongo.pipelines.MongoPipeline': 400
+}
+
+MONGO_URL = 'mongodb://47.106.86.64:27017'
+MONGO_DBNAME = 'db_py'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

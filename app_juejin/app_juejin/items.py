@@ -19,6 +19,8 @@ class AppJuejinItem(scrapy.Item):
 class AppJuejinCrticleItem(scrapy.Item):
     # title
     title = scrapy.Field()
+    # type
+    type = scrapy.Field()
     # link
     url = scrapy.Field()
     # content html
